@@ -10,8 +10,8 @@
         // event.preventDefault()
         // event.stopPropagation()
         if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+          // event.preventDefault()
+          // event.stopPropagation()
         
         } 
         else {
@@ -19,7 +19,7 @@
          '<div class="alert alert-success" role="alert">' +
          'suscess' +
          '</div>'
-        //  alert('Success')
+         alert('Success')
         }
         form.classList.add('was-validated')
       }, false)
