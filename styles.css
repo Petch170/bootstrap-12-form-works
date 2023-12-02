@@ -1,3 +1,10 @@
 .btn-color{
-    background: rgb(169, 142, 218);
+    background: rgb(93, 84, 164);
+}
+
+.btn-color:hover{
+    background: rgb(93, 84, 164);
+}
+.terms{
+    font-size: 14px;
 }

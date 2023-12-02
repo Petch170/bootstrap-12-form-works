@@ -20,66 +20,84 @@
 
 <body>
 
-  <div class="d-flex flex-column justify-content-center align-items-center vh-100 gap-4 p-5 bg-danger">
-  <div class="d-grid gap-2 w-50">
-    <button type="button" class="btn btn-color">Try it free 7 days then $20/mo.thereafter</button>
-    <form class="needs-validation" novalidate>
-      <div class="card bg-white p-3 gap-3">
-        <input class="form-control" type="text" aria-label="firstname" placeholder="First name" required>
-        <div id="validationfirstname" class="invalid-feedback">
-          Error!
-        </div>
-        <input class="form-control" type="text" aria-label="lastname" placeholder="Last name" required>
-        <div id="validationlastname" class="invalid-feedback">
-          Error!
-        </div>
-        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
-          placeholder="Email Address" required>
-        <div id="validationInputEmailFeedback" class="invalid-feedback">
-          Error!
-        </div>
-        <input type="password" class="form-control" id="InputPassword" placeholder="Password" required>
-        <div id="validationInputPassword" class="invalid-feedback">
-          Error!
-        </div>
-        <div id="liveAlertPlaceholder"></div>
-        <button type="submit" class="d-grid col-12 btn btn-success">CLAM YOUR FREE TRIAL</button>
-        <p>By clicking the you are agreeing to our <span class="text-danger fw-bold" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">Terms and services</span></p>
-      </div>
-    </form>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="d-flex flex-column justify-content-center align-items-center vh-100 gap-4 bg-danger">
+    <!-- main btn -->
+    <div class="d-grid col-xxl-4 col-lg-6 col-md-8 col-sm-12 gap-2">
+      <button type="button" class="btn btn-color p-2 text-white"><strong>Try it free 7 days </strong>then $20/mo.thereafter</button>
+      <!-- form -->
+      <form class="needs-validation" novalidate>
+        <div class="card bg-white px-3 pt-4 gap-3">
+          <div>
+            <input class="form-control" type="text" aria-label="firstname" placeholder="First name" required>
+            <div id="validationfirstname" class="invalid-feedback">
+              Please input your firstname!
+            </div>
           </div>
-          <div class="modal-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, consectetur consequuntur fugit
-            quisquam illum saepe explicabo rerum. Explicabo, nesciunt quae esse mollitia ex illo asperiores molestiae
-            culpa aut atque eligendi?
+          <div>
+            <input class="form-control" type="text" aria-label="lastname" placeholder="Last name" required>
+            <div id="validationlastname" class="invalid-feedback">
+              Please input your lastname!
+            </div>
           </div>
-          <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div> -->
+          <div>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+              placeholder="Email Address" required>
+            <div id="validationInputEmailFeedback" class="invalid-feedback">
+              Please input your email!
+            </div>
+          </div>
+          <div>
+            <input type="password" class="form-control" id="InputPassword" placeholder="Password" required>
+            <div id="validationInputPassword" class="invalid-feedback">
+              Please input your Password!
+            </div>
+          </div>
+          <!-- alert -->
+          <div>
+            <div id="liveAlertPlaceholder"></div>
+            <!-- btn submit -->
+            <button type="submit" class="d-grid col-12 btn btn-success">CLAM YOUR FREE TRIAL</button>
+            <p class="terms text-center">By clicking the you are agreeing to our <a href="#"
+                class="text-decoration-none text-danger fw-bold" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Terms and services</a></p>
+          </div>
+        </div>
+      </form>
+      <!-- modal in Terms and services -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, consectetur consequuntur fugit
+              quisquam illum saepe explicabo rerum. Explicabo, nesciunt quae esse mollitia ex illo asperiores molestiae
+              culpa aut atque eligendi?
+            </div>
+          
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 
 
   <!-- <div class="d-flex flex-column justify-content-center align-items-center vh-100 gap-4 p-5 bg-danger"> -->
-    <!-- <button type="button" class="btn-color w-50">Try it free 7 days then $20/mo.thereafter</button> -->
-    <!-- <div class="d-flex flex-column justify-content-center align-items-center bg-white p-5 gap-4 w-50"> -->
-      <!-- <input class="form-control" type="text" aria-label="lastname" placeholder="first name"> -->
-      <!-- <input class="form-control" type="text" aria-label="lastname" placeholder="Last name"> -->
-      <!-- <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email Address"> -->
-      <!-- <input type="password" class="form-control" id="InputPassword" placeholder="Password"> -->
-      <!-- <button type="submit" class="d-grid col-12 btn btn-success">CLAM YOUR FREE TRIAL</button> -->
-      <!-- <p>By clicking the you are agreeing to our <span class="text-danger fw-bold">Terms and services</span></p> -->
-    <!-- </div> -->
+  <!-- <button type="button" class="btn-color w-50">Try it free 7 days then $20/mo.thereafter</button> -->
+  <!-- <div class="d-flex flex-column justify-content-center align-items-center bg-white p-5 gap-4 w-50"> -->
+  <!-- <input class="form-control" type="text" aria-label="lastname" placeholder="first name"> -->
+  <!-- <input class="form-control" type="text" aria-label="lastname" placeholder="Last name"> -->
+  <!-- <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email Address"> -->
+  <!-- <input type="password" class="form-control" id="InputPassword" placeholder="Password"> -->
+  <!-- <button type="submit" class="d-grid col-12 btn btn-success">CLAM YOUR FREE TRIAL</button> -->
+  <!-- <p>By clicking the you are agreeing to our <span class="text-danger fw-bold">Terms and services</span></p> -->
   <!-- </div> -->
+  <!-- </div> -->
+    <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div> -->
 </body>
+
 </html>
